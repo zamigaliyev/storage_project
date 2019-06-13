@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Table V05</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="icon" type="image/png" href="./images/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="./vendor/bootstrap/js/bootstrap.min.js">
+	<link rel="stylesheet" type="text/css" href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./vendor/animate/animate.css">
+  <link rel="stylesheet" type="text/css" href="./vendor/select2/select2.min.js">
+  <link rel="stylesheet" type="text/css" href="./vendor/perfect-scrollbar/perfect-scrollbar.css">
+  <link rel="stylesheet" type="text/css" href="./css/util.css">
+	<link rel="stylesheet" type="text/css" href="./css/sector-one.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+					<nav id="main-2" class="navbar navbar-expand-lg navbar-light bg-light">
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<a href="./sector-one.html" id="btn-one">Sector-One</a>
+								<a href="./sector-two.html" id="btn-two">Sector-Two</a>
+								<a href="./sector-three.html" id="btn-three">Sector-Three</a>
+								<a href="./index.html" id="btn-four">All-Sectors</a>
+							  <form class="form-inline my-2 my-lg-0">
+								<input id="search-1" class="form-control mr-sm-2 search" type="search" placeholder="Search" aria-label="Search">
+								<a href="./add1.html" id="myadd" style="background-color:darkcyan; margin-left: 1.7em; border: 1px solid darkcyan ; color: white; padding: 1em; text-decoration: none;" >Add</a>
+							  </form>
+							</div>
+						  </nav>
+				<div id="table-2" class="table100 ver1">
+						<div class="container h-100">
+								<div class="d-flex justify-content-center h-100">
+							<table class="results" id="myTable">
+								<thead>
+									<tr id="searchid">
+										<tr class="row100 head">
+											<th class="cell100 column2">Sector</th>
+											<th class="cell100 column3">Product Name</th>
+											<th class="cell100 column4">Product Number</th>
+											
+										</tr>
+										</thead>
+										<tbody></tbody>
+									</tr>
+									
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="./vendor/jquery/jquery-3.2.1.min.js"></script>
+  <script src="./vendor/bootstrap/js/popper.js"></script>
+	<script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./vendor/select2/select2.min.js"></script>
+	<script src="./vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+	<script src="./js/sc-one.js"></script>
+	<script>
+		$('.js-pscroll').each(function(){
+			var ps = new PerfectScrollbar(this);
+
+			$(window).on('resize', function(){
+				ps.update();
+			})
+
+			$(this).on('ps-x-reach-start', function(){
+				$(this).parent().find('.table100-firstcol').removeClass('shadow-table100-firstcol');
+			});
+
+			$(this).on('ps-scroll-x', function(){
+				$(this).parent().find('.table100-firstcol').addClass('shadow-table100-firstcol');
+			});
+
+		});
+	</script>
+<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+<script src="./js/sector-one.js"></script>
+
+	
+</body>
+</html>

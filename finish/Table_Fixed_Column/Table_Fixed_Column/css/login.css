@@ -1,0 +1,15 @@
+.card {
+    margin-top: 13em;
+}
+
+body,html {
+    background-color: burlywood;
+}
+
+section {
+    background-color: burlywood;
+}
+
+.card-header {
+    width: 38em;
+}

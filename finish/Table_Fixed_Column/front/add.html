@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Add</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="./dist/css/adminx.css" media="screen" />
+  </head>
+  <body>
+    <div class="adminx-container">
+      <!-- Header -->
+      <nav class="navbar navbar-expand justify-content-between fixed-top">
+        <a class="navbar-brand mb-0 h1 d-none d-md-block" href="index.html">
+          <img src="./demo/img/logo.png" class="navbar-brand-image d-inline-block align-top mr-2" alt="">
+          AdminX
+        </a>
+
+        <form class="form-inline form-quicksearch d-none d-md-block mx-auto">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-icon">
+                <i data-feather="search"></i>
+              </div>
+            </div>
+            <input type="text" class="form-control" id="search" placeholder="Type to search...">
+          </div>
+        </form>
+      </nav>
+      <!-- // Header -->
+
+      <!-- expand-hover push -->
+      <div class="adminx-sidebar expand-hover push" id="sidebar">
+        <ul class="sidebar-nav">
+          <li class="sidebar-nav-item">
+            <a href="../index.html" class="sidebar-nav-link">
+              <span class="sidebar-nav-icon">
+                <i data-feather="home"></i>
+              </span>
+              <span class="sidebar-nav-name">
+                Dashboard
+              </span>
+              <span class="sidebar-nav-end">
+
+              </span>
+            </a>
+          </li>
+
+
+          <li class="sidebar-nav-item">
+            <a class="sidebar-nav-link collapsed" data-toggle="collapse" href="#example" aria-expanded="false" aria-controls="example">
+              <span class="sidebar-nav-icon">
+                <i data-feather="pie-chart"></i>
+              </span>
+              <span class="sidebar-nav-name">
+                Charts
+              </span>
+              <span class="sidebar-nav-end">
+                <i data-feather="chevron-right" class="nav-collapse-icon"></i>
+              </span>
+            </a>
+
+            <ul class="sidebar-sub-nav collapse" id="example">
+              <li class="sidebar-nav-item">
+                <a href="./charts_chartjs.html" class="sidebar-nav-link">
+                  <span class="sidebar-nav-abbr">
+                    Ch
+                  </span>
+                  <span class="sidebar-nav-name">
+                    ChartJS
+                  </span>
+                </a>
+              </li>
+
+              <li class="sidebar-nav-item">
+                <a href="./charts_morris.html" class="sidebar-nav-link">
+                  <span class="sidebar-nav-abbr">
+                    Mo
+                  </span>
+                  <span class="sidebar-nav-name">
+                    Morris
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="sidebar-nav-item">
+            <a class="sidebar-nav-link" data-toggle="collapse" href="#navTables" aria-expanded="false" aria-controls="navTables">
+              <span class="sidebar-nav-icon">
+                <i data-feather="align-justify"></i>
+              </span>
+              <span class="sidebar-nav-name">
+                Tables
+              </span>
+              <span class="sidebar-nav-end">
+                <i data-feather="chevron-right" class="nav-collapse-icon"></i>
+              </span>
+            </a>
+
+            <ul class="sidebar-sub-nav collapse show" id="navTables">
+              <li class="sidebar-nav-item">
+                <a href="./tables.html" class="sidebar-nav-link">
+                  <span class="sidebar-nav-abbr">
+                    Re
+                  </span>
+                  <span class="sidebar-nav-name">
+                    Regular Tables
+                  </span>
+                </a>
+              </li>
+
+              <li class="sidebar-nav-item">
+                <a href="./tables_data.html" class="sidebar-nav-link active">
+                  <span class="sidebar-nav-abbr">
+                    Da
+                  </span>
+                  <span class="sidebar-nav-name">
+                    Data Tables
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main Content -->
+    <div class="adminx-content">
+        <div class="adminx-main-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <span  class="name-input">section</span><input id="section" class="inputs-main" id="section" type="text" placeholder="Type your ...">
+                        </div>
+                    <div class="col-md-1"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <span  class="name-input">pro</span><input id="name" class="inputs-main" type="text" id="product" placeholder="Type your ...">
+                        </div>
+                    <div class="col-md-1"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <span  class="name-input">stock</span><input id="stock" class="inputs-main"  type="text" placeholder="Type your ...">
+                        </div>
+                    <div class="col-md-1"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5"></div>
+                    <div class="col-md-4">
+                        <button id="save" type="button" class="btn btn-success btn-inputs">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="./dist/js/vendor.js"></script>
+    <script src="./dist/js/adminx.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+    <script src="./add.js"></script>
+    
+  
+    <script>
+      $(document).ready(function() {
+        var table = $('[data-table]').DataTable({
+          "columns": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            { "orderable": false }
+          ]
+        });
+      });
+    </script>
+
+  </body>
+</html>
